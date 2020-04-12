@@ -20,11 +20,15 @@ module.exports.getGenres = () => {
 				console.log(err);
 				reject("Can't get genres");
 			}else{
-				let genres = {};
-				for(data of rows){
-					genres[data.id] = data.name;
+				if(rows.length){
+					let genres = {};
+					for(data of rows){
+						genres[data.id] = data.name;
+					}
+					resolve(genres);
 				}
-				resolve(genres);
+				else
+					resolve(false);
 			}
 		});
 	})
