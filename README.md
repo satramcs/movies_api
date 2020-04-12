@@ -22,11 +22,11 @@ http://localhost:5000/movies/store_movies?year=2018 <br />
 http://localhost:5000/movies/store_movies?year=2019 <br />
 Note: This API will continue to store the data (It will not store from beginning if any interruption) <br />
  <br />
-3) Show Movies count by genre and year <br />
+iii) Show Movies count by genre and year <br />
 http://localhost:5000/movies/movies_count?genre=Action&year=2019 <br />
  <br />
-4) Display movies list by genre, year and name <br />
+iv) Display movies list by genre, year and name <br />
 http://localhost:5000/movies/get_movies?genre=Action&year=2018&name=Asuran&page=1 <br />
  <br />
-5) Show Movies count by genre, year and language <br />
+v) Show Movies count by genre, year and language <br />
 http://localhost:5000/movies/movies_count?genre=Action&year=2018&language=en <br />
