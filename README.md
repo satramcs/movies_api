@@ -1,5 +1,6 @@
 ### Show Movies API
 > Store and display movies using external API. Technologies: Node.js, Express.js, MariaDB 
+> External API: https://www.themoviedb.org/
 
 ### Installation
 ```bash
