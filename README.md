@@ -1,6 +1,3 @@
-# movies_api
-
-
 ### Show Movies API
 > Store and display movies using external API. Technologies: Node.js, Express.js, MariaDB 
 
@@ -17,10 +14,10 @@ npm start
 ```
 ### API list
 
-1) Store Genres in database <br />
+i) Store Genres in database <br />
 http://localhost:5000/movies/store_genres <br />
  <br />
-2) Store Movies in database by year (2018, 2019) <br />
+ii) Store Movies in database by year (2018, 2019) <br />
 http://localhost:5000/movies/store_movies?year=2018 <br />
 http://localhost:5000/movies/store_movies?year=2019 <br />
 Note: This API will continue to store the data (It will not store from beginning if any interruption) <br />
