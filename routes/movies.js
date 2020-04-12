@@ -33,13 +33,14 @@ router.get("/store_movies", helper.storeMoviesValidation, (req, res) => {
 	let year = req.query.year;
 	
 	movieModel.getGenres().then( get_genres => {
-		console.log(get_genres);
 		if(get_genres){
 			getLastCount(get_genres);
 			res.json({status: 1, message: 'Save process started, please watch your terminal'});
 		}else{
 			return res.json({status: 0, message: 'Please run genres api to save the genres data'});
 		}
+	}).catch(err => {
+		res.json({status: 0, message: 'Can\'t get genres from database'});
 	});
 
 	const getLastCount = function(get_genres){
