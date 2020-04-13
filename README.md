@@ -31,3 +31,10 @@ http://localhost:5000/movies/get_movies?genre=Action&year=2018&name=Asuran&page=
  <br />
 v) Show Movies count by genre, year and language <br />
 http://localhost:5000/movies/movies_count?genre=Action&year=2018&language=en <br />
+
+### Error Codes
+status_code:1 -> Success (status:200) <br />
+status_code:2 -> Input error, invalid year, invalid page, invalid name, invalid genre (status:400) <br />
+status_code:3 -> Third party API error (status:403) <br />
+status_code:4 -> Server error (status:500) <br />
+status_code:5 -> Server error (status:404) <br />
